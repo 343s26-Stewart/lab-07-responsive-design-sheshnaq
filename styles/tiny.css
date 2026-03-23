@@ -1,0 +1,7 @@
+@media (width <= 374px){
+    .wrapper{
+        grid-template-areas:
+            "content"
+            "nav";
+    }
+}
