@@ -1,0 +1,8 @@
+* {
+    /* for arabic and hebrew */
+    /* direction: rtl; */
+
+    /* for korean and japanese */
+    /* writing-mode: vertical-rl;
+    text-orientation: upright; */
+}
