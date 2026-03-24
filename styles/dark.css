@@ -1,0 +1,67 @@
+/* body.dark, @media (prefers-color-scheme: dark) {
+  :root {
+    
+    --lion: #2a2a2a;
+    --tiger: #303030;
+    --wolf: #262626;
+    --bear: #333333;
+    --webelos: #2f2f2f;
+    --aol: #383838;
+    --accent-purple: #b4a7ff;
+    --border-color: #6b6f8a;
+  }
+
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a, .purple-text {
+  color: var(--accent-purple);
+}
+
+} */
+
+
+/* Dark mode via class */
+body.dark {
+  --lion: #2a2a2a;
+  --tiger: #303030;
+  --wolf: #262626;
+  --bear: #333333;
+  --webelos: #2f2f2f;
+  --aol: #383838;
+  --accent-purple: #b4a7ff;
+  --border-color: #6b6f8a;
+
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark a,
+body.dark .purple-text {
+  color: var(--accent-purple);
+}
+
+/* OS preference */
+@media (prefers-color-scheme: dark) {
+  body:not(.light) {
+    --lion: #2a2a2a;
+    --tiger: #303030;
+    --wolf: #262626;
+    --bear: #333333;
+    --webelos: #2f2f2f;
+    --aol: #383838;
+    --accent-purple: #b4a7ff;
+    --border-color: #6b6f8a;
+
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
+
+/* Optional light override */
+body.light {
+  background-color: white;
+  color: black;
+}
