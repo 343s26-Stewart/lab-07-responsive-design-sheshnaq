@@ -1,6 +1,6 @@
 * {
     /* for arabic and hebrew */
-    /* direction: rtl; */
+    direction: rtl;
 
     /* for korean and japanese */
     /* writing-mode: vertical-rl;
